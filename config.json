@@ -1,0 +1,131 @@
+{
+  "cfg_path": "/home/pramzepto/Desktop/pramZepto/GUI_final/nanocounter_test_ver/config.json",
+  "uart": {
+    "port": "/dev/ttyAMA0",
+    "baud": 115200
+  },
+  "axes": {
+    "x": {
+      "enable": 26,
+      "step": 19,
+      "dir": 13,
+      "driver_address": 0,
+      "microstepping": 32,
+      "photoelectric_switch": 7,
+      "current_ma": 1000,
+      "invert_dir": false,
+      "spreadcycle": false
+    },
+    "y": {
+      "enable": 22,
+      "step": 27,
+      "dir": 17,
+      "driver_address": 1,
+      "microstepping": 32,
+      "photoelectric_switch": 8,
+      "current_ma": 1000,
+      "invert_dir": false,
+      "spreadcycle": false
+    },
+    "z": {
+      "enable": 24,
+      "step": 23,
+      "dir": 18,
+      "driver_address": 2,
+      "microstepping": 32,
+      "photoelectric_switch": 25,
+      "current_ma": 900,
+      "invert_dir": false,
+      "spreadcycle": false
+    }
+  },
+  "motion": {
+    "accel_fullstep": 200,
+    "max_speed_fullstep": 300
+  },
+  "motor": {
+    "x_home": 0,
+    "y_home": 0,
+    "z_home": 0,
+    "x_full_step_min": 0,
+    "x_full_step_max": 6000,
+    "y_full_step_min": 0,
+    "y_full_step_max": 5200,
+    "z_full_step_min": 0,
+    "z_full_step_max": 1200,
+    "x_current_position_full_step": 0.0,
+    "y_current_position_full_step": 0.0,
+    "z_current_position_full_step": 0.0
+  },
+  "endstops": {
+    "chip": 0,
+    "debounce_ms": 8,
+    "pull_up": true,
+    "active_state": "low"
+  },
+  "forbidden_zone": {
+    "x_forbidden_start": 3800,
+    "x_forbidden_end": 8000,
+    "y_forbidden_start": 850,
+    "y_forbidden_end": 5000,
+    "z_forbidden_start": 1000,
+    "z_forbidden_end": 1200
+  },
+  "speed_control": {
+    "base_speed_fullstep": 300,
+    "base_accel_fullstep": 200,
+    "max_speed_fullstep": 800,
+    "max_accel_fullstep": 400,
+    "min_speed_fullstep": 3
+  },
+  "safety_bounds": {
+    "z_global_max": 2000.0,
+    "xy_forbidden_x": 3800.0,
+    "xy_forbidden_y": 850.0,
+    "z_safe_rect": {
+      "x_min": 4050,
+      "x_max": 4480,
+      "y_min": 220,
+      "y_max": 720,
+      "z_max": 300
+    }
+  },
+  "theme": {
+    "font_family": "Arial",
+    "font_size": "14px",
+    "font_color": "black",
+    "bg_color": "white",
+    "panel_bg": "#ffffff",
+    "image_bg": "#f5f5f5",
+    "border_color": "black",
+    "border_width": "1px",
+    "button_bg": "#e0e0e0",
+    "button_hover": "#d0d0d0",
+    "button_pressed": "#c0c0c0",
+    "button_border": "1px solid #999",
+    "button_radius": "5px",
+    "groupbox_title_bg": "#ffffff"
+  },
+  "camera": {
+    "default_width": 4056,
+    "default_height": 3040,
+    "default_shutter": "250",
+    "default_contrast": "4",
+    "default_gain": "1",
+    "default_awbgains": "1,0.01",
+    "default_sharpness": "10",
+    "default_brightness": "",
+    "default_quality": 100,
+    "default_folder": "~/Desktop/Users/",
+    "default_ev": "5",
+    "default_prev_time": "",
+    "default_denoise": "off",
+    "default_digital_gain": "",
+    "default_saturation": ""
+  },
+  "default_position": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  }
+}

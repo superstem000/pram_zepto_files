@@ -1,0 +1,95 @@
+{
+  "microfluidics test": {
+    "name": "microfluidics test",
+    "steps": [
+      {
+        "step_type": "microfluidics",
+        "x_us": 0,
+        "y_us": 0,
+        "z_us": 0,
+        "speed": 1.0,
+        "dwell_ms": 0,
+        "override_z_limit": false,
+        "run_calibration_during_dwell": false,
+        "num_cycles": 1,
+        "scan_size": 5,
+        "note": "Microfluidics routine"
+      }
+    ]
+  },
+  "spiralscan test": {
+    "name": "spiralscan test",
+    "steps": [
+      {
+        "step_type": "spiral_scan",
+        "x_us": 0,
+        "y_us": 0,
+        "z_us": 0,
+        "speed": 1.0,
+        "dwell_ms": 0,
+        "override_z_limit": false,
+        "run_calibration_during_dwell": false,
+        "num_cycles": 2,
+        "scan_size": 5,
+        "note": "Spiral scan (5\u00d75, 2 cycles)"
+      }
+    ]
+  },
+  "full_test": {
+    "name": "full_test",
+    "steps": [
+      {
+        "step_type": "microfluidics_push1",
+        "x_us": 0,
+        "y_us": 0,
+        "z_us": 0,
+        "speed": 1.0,
+        "dwell_ms": 0,
+        "override_z_limit": false,
+        "run_calibration_during_dwell": false,
+        "num_cycles": 1,
+        "scan_size": 5,
+        "note": "\u00b5Fluidics Push 1 (approach \u2192 slow push \u2192 retract)"
+      },
+      {
+        "step_type": "calibration",
+        "x_us": 0,
+        "y_us": 0,
+        "z_us": 0,
+        "speed": 1.0,
+        "dwell_ms": 0,
+        "override_z_limit": false,
+        "run_calibration_during_dwell": false,
+        "num_cycles": 1,
+        "scan_size": 5,
+        "note": "Full orient calibration (~30 min; doubles as incubation)"
+      },
+      {
+        "step_type": "microfluidics_push2",
+        "x_us": 0,
+        "y_us": 0,
+        "z_us": 0,
+        "speed": 1.0,
+        "dwell_ms": 0,
+        "override_z_limit": false,
+        "run_calibration_during_dwell": false,
+        "num_cycles": 1,
+        "scan_size": 5,
+        "note": "\u00b5Fluidics Push 2 (approach \u2192 slow push \u2192 retract \u2192 Z retract)"
+      },
+      {
+        "step_type": "spiral_scan",
+        "x_us": 0,
+        "y_us": 0,
+        "z_us": 0,
+        "speed": 1.0,
+        "dwell_ms": 0,
+        "override_z_limit": false,
+        "run_calibration_during_dwell": false,
+        "num_cycles": 1,
+        "scan_size": 5,
+        "note": "Spiral scan (5\u00d75, 1 cycle)"
+      }
+    ]
+  }
+}
