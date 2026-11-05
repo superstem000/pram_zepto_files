@@ -1,0 +1,23 @@
+# training / analysis
+torch
+torchvision
+numpy
+scipy
+pandas
+matplotlib
+opencv-python
+pillow
+scikit-image
+scikit-learn
+tqdm
+tensorboardX
+absl-py
+ipython
+openpyxl
+
+# export
+onnx
+onnxruntime
+
+# optional (interactive HTML plots in analysis/analyze_assay.py)
+plotly
